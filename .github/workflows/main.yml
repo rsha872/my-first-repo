@@ -1,11 +1,11 @@
-name: Hello 
+---
+name: Hello
 on:
-  push: [main] 
+  push:
+    - main
 jobs:
- greet:
-
-  runs-on: ubuntu-latest
-  steps:
-    - name: say hello to users 
-    -run: echo "HELLO $User"
-    
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to users
+        run: echo "HELLO $User"

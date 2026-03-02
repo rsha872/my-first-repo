@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Hide button when printing */
+        @media print {
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello, this is a printable page!</h1>
+    <p>Click the button below to print this content.</p>
+
+    <button onclick="printPage()">Print</button>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
+
+</body>
+</html>

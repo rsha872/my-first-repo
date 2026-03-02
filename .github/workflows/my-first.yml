@@ -1,0 +1,14 @@
+name: Print Message Workflow
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  print-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a message
+        run: echo "Hello, this is printed from a YAML workflow!"
